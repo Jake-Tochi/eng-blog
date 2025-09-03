@@ -82,7 +82,7 @@
             background: var(--paper);
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
         }
 
         .container {
@@ -163,7 +163,10 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, var(--sage) 0%, var(--paper) 100%);
+            background: linear-gradient(135deg, rgba(233, 238, 233, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('hero.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             padding: clamp(60px, 10vw, 120px) 0;
             text-align: center;
         }
@@ -204,6 +207,8 @@
         .article-header {
             margin-bottom: clamp(40px, 6vw, 60px);
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
 
         .article-title {
@@ -383,13 +388,15 @@
         }
     </style>
 </head>
-<body>
+<body id="top">
     <a href="#main" class="skip-link">Skip to content</a>
     
     <header role="banner">
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo" aria-label="Wellnethy Home">Wellnethy</a>
+                <a href="#top" class="logo" aria-label="Wellnethy Home">
+                    <img src="rogo.webp" alt="Wellnethy" style="height: clamp(36px, 4.5vw, 48px);">
+                </a>
                 
                 <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
                     <span></span>
@@ -399,10 +406,10 @@
                 
                 <nav id="main-nav" role="navigation" aria-label="Main navigation">
                     <a href="https://jpn-travel.com/">TOP</a>
-                    <a href="https://jpn-travel.com/about-wellnethy/">About WELLNETHY</a>
+                    <a href="https://jpn-travel.com/aboutus/">About WELLNETHY</a>
                     <a href="https://jpn-travel.com/travel-stories/">Travel Stories</a>
                     <a href="https://jpn-travel.com/wellnethy/">会社概要</a>
-                    <a href="https://jpn-travel.com/company-contact/">Contact</a>
+                    <a href="https://jpn-travel.com/contact/">Contact</a>
                 </nav>
             </div>
         </div>
@@ -412,7 +419,7 @@
         <div class="container">
             <p class="eyebrow">Insights</p>
             <h1>Stories That Bridge Cultures</h1>
-            <p class="hero-intro">We share stories and reflections that bridge cultures and invite calmer, kinder travel.</p>
+            <p class="hero-intro">We share stories and insights that connect cultures and inspire mindful travel.</p>
         </div>
     </section>
 
@@ -420,35 +427,22 @@
         <div class="container">
             <article>
                 <header class="article-header">
-                    <h1 class="article-title">I Used to Be Afraid of Speaking with Foreigners</h1>
-                    <p class="lede">My first cross-cultural exchange</p>
+                    <h1 class="article-title">A Childhood Story</h1>
+                    <p class="lede">Discovering Japan's Unique Approach to Wellness</p>
                 </header>
 
                 <div class="article-content">
-                    <h2>The anxiety before my first international exchange</h2>
-                    <p>Trying anything for the first time makes you nervous, right? Today I'd like to share the experience of the first time I had a meal with a foreigner. It was about 15 years ago. A college friend brought her Australian boyfriend, and we decided to have dinner together. Back then I could hardly speak English, and I was so anxious I barely slept for two nights leading up to it.</p>
+                    <p>In Japan, there's a unique way of looking at wellness that goes beyond just treating symptoms. Growing up with a father who practiced traditional Japanese bodywork, I learned early on that health is about enhancing the body's natural healing abilities. Let me share a story of one of the patients my father helped, which beautifully illustrates this approach.</p>
 
-                    <h2>The nerve-wracking dinner</h2>
-                    <p>On the day, the four of us—my friend, her boyfriend, my wife and I—went out for dinner. The other three could speak English, so the conversation flowed from the start. As for me, I didn't know what to do and stayed tense the whole time (I must have excused myself to the restroom more times than I can count…).</p>
+                    <p>One day, a patient came in who wasn't exactly ill by Western standards but felt constantly fatigued and out of balance—a state we might call "mibyo," or a pre-illness condition. Rather than prescribing medication, my father used gentle alignment techniques and encouraged simple lifestyle changes to boost the patient's own resilience. Over time, the patient not only felt better but gained a new appreciation for how the body can heal itself when given the right support.</p>
 
-                    <h2>A moment of kindness</h2>
-                    <p>But he was incredibly kind. He slowed his speech for me and made sure everyone could enjoy the conversation. Thanks to that, by the end I felt, "Maybe speaking with foreigners isn't so scary after all." That experience taught me that even when you feel anxious about unfamiliar cultures or languages, your heart relaxes naturally when the other person tries to meet you halfway.</p>
-
-                    <blockquote class="pull-quote">
-                        "Maybe speaking with foreigners isn't so scary after all."
-                    </blockquote>
-
-                    <h2>What's normal in a diverse society</h2>
-                    <p>I later realized that yes, he was a kind person, but speaking slowly and being considerate is simply normal in diverse societies. When you live alongside people from many backgrounds, you often need to communicate with those who aren't fluent, so adjusting your pace and style is essential.</p>
-
-                    <h2>A note to readers</h2>
-                    <p>If you feel the same kind of nervousness, try approaching people from overseas with the thought that "they might be kind to me too." And if you're facing challenges with English or inbound customer service, our Business English Support may help.</p>
+                    <p>This is just one example of how traditional Japanese wellness practices can offer a refreshing perspective. In the next posts, we'll dive into more ways you can experience this during your visit to Japan. Stay tuned and let's continue exploring this journey together!</p>
                 </div>
 
                 <div class="cta-section">
-                    <h2>Need Help with Business English?</h2>
-                    <p>Our specialized support helps businesses communicate confidently with international customers.</p>
-                    <a href="https://bes.jpn-travel.com/" class="btn" role="button">Get Business English Support</a>
+                    <h2>Curious to experience these wellness traditions in Japan yourself?</h2>
+                    <p>My travel agency specializes in wellness-focused tours — feel free to get in touch or explore more on our website</p>
+                    <a href="https://bes.jpn-travel.com/" class="btn" role="button">Get the Professional Japan Travel Support</a>
                 </div>
             </article>
         </div>
