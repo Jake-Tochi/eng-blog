@@ -275,6 +275,44 @@
             max-width: 75ch;
         }
 
+        /* Article Image */
+        .article-image {
+            float: right;
+            margin: 0 0 clamp(24px, 3vw, 32px) clamp(24px, 3vw, 40px);
+            max-width: clamp(280px, 40vw, 350px);
+            background: var(--paper);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .article-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .article-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .article-image figcaption {
+            padding: 16px 20px;
+            font-size: 14px;
+            color: var(--muted);
+            font-style: italic;
+            text-align: center;
+            background: var(--sage);
+            line-height: 1.4;
+        }
+
         .pull-quote {
             background: var(--sage);
             border-left: 4px solid var(--accent);
@@ -325,6 +363,94 @@
         .btn:focus {
             outline: 2px solid var(--accent);
             outline-offset: 2px;
+        }
+
+        /* Article Navigation */
+        .article-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: clamp(60px, 8vw, 80px) 0;
+            border-top: 1px solid var(--sage);
+            padding-top: clamp(40px, 6vw, 60px);
+        }
+
+        .article-nav-btn {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 24px;
+            background: var(--paper);
+            border: 1px solid var(--sage);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--ink);
+            transition: all 0.3s ease;
+            flex: 1;
+            max-width: 300px;
+            min-height: 100px;
+        }
+
+        .article-nav-btn:hover,
+        .article-nav-btn:focus {
+            background: var(--sage);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+        .article-nav-btn:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .article-nav-prev {
+            justify-content: flex-start;
+        }
+
+        .article-nav-next {
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+        .article-nav-icon {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent);
+            transition: transform 0.2s ease;
+        }
+
+        .article-nav-btn:hover .article-nav-icon {
+            transform: translateX(var(--arrow-move, 0));
+        }
+
+        .article-nav-prev:hover .article-nav-icon {
+            --arrow-move: -4px;
+        }
+
+        .article-nav-next:hover .article-nav-icon {
+            --arrow-move: 4px;
+        }
+
+        .article-nav-content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .article-nav-label {
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+
+        .article-nav-title {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.3;
         }
 
         footer {
@@ -421,6 +547,39 @@
             p {
                 page-break-inside: avoid;
             }
+
+            .article-nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .article-image {
+                float: none;
+                margin: clamp(32px, 6vw, 48px) auto;
+                max-width: 100%;
+                display: block;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .article-nav {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .article-nav-btn {
+                max-width: 100%;
+            }
+
+            .article-nav-next {
+                margin-left: 0;
+                order: -1;
+            }
+
+            .article-nav-prev {
+                order: 1;
+            }
         }
     </style>
 </head>
@@ -430,7 +589,7 @@
     <header role="banner">
         <div class="container">
             <div class="header-content">
-                <a href="#top" class="logo" aria-label="Wellnethy Home">
+                <a href="https://jpn-travel.com/" class="logo" aria-label="Wellnethy Home">
                     <img src="rogo.webp" alt="Wellnethy" style="height: clamp(36px, 4.5vw, 48px);">
                 </a>
                 
@@ -441,11 +600,11 @@
                 </button>
                 
                 <nav id="main-nav" role="navigation" aria-label="Main navigation">
-                    <a href="/">TOP</a>
-                    <a href="/aboutus/">About WELLNETHY</a>
-                    <a href="/travel-stories/">Travel Stories</a>
-                    <a href="/wellnethy/">会社概要</a>
-                    <a href="/contact/">Contact</a>
+                    <a href="https://jpn-travel.com/">TOP</a>
+                    <a href="https://jpn-travel.com/aboutus/">About WELLNETHY</a>
+                    <a href="https://jpn-travel.com/travel-stories/">Travel Stories</a>
+                    <a href="https://jpn-travel.com/wellnethy/">会社概要</a>
+                    <a href="https://jpn-travel.com/contact/">Contact</a>
                 </nav>
             </div>
         </div>
@@ -471,6 +630,11 @@
                     <h2>The Philosophy of Japanese Wellness</h2>
                     <p>In Japan, there's a unique way of looking at wellness that goes beyond just treating symptoms. Growing up with a father who practiced traditional Japanese bodywork, I learned early on that health is about enhancing the body's natural healing abilities. Let me share a story of one of the patients my father helped, which beautifully illustrates this approach.</p>
 
+                    <figure class="article-image">
+                        <img src="01pic.webp" alt="Traditional Japanese wellness practices and mibyo concept illustration" loading="lazy">
+                        <figcaption>Understanding the concept of "mibyo" in Japanese wellness culture</figcaption>
+                    </figure>
+
                     <h2>Understanding Mibyo: The Pre-Illness State</h2>
                     <p>One day, a patient came in who wasn't exactly ill by Western standards but felt constantly fatigued and out of balance—a state we might call <strong>"mibyo,"</strong> or a pre-illness condition. Rather than prescribing medication, my father used gentle alignment techniques and encouraged simple lifestyle changes to boost the patient's own resilience. Over time, the patient not only felt better but gained a new appreciation for how the body can heal itself when given the right support.</p>
 
@@ -481,8 +645,19 @@
                 <div class="cta-section">
                     <h2>Curious to experience these wellness traditions in Japan yourself?</h2>
                     <p>My travel agency specializes in wellness-focused tours — feel free to get in touch or explore more on our website</p>
-                    <a href="https://bes.jpn-travel.com/" class="btn" role="button">Get the Professional Japan Travel Support</a>
+                    <a href="https://jpn-travel.com/contact/" class="btn" role="button">Get the Professional Japan Travel Support</a>
                 </div>
+
+                <!-- Article Navigation -->
+                <nav class="article-nav" aria-label="Article navigation">
+                    <a href="http://blog.jpn-travel.com/02/" class="article-nav-btn article-nav-next" title="Next article">
+                        <div class="article-nav-content">
+                            <span class="article-nav-label">Next</span>
+                            <span class="article-nav-title">Understanding "Mibyo"</span>
+                        </div>
+                        <span class="article-nav-icon">→</span>
+                    </a>
+                </nav>
             </article>
         </div>
     </main>
