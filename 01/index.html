@@ -1,1 +1,551 @@
-<h1>Hello 01</h1>
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#")
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Childhood Story | Wellnethy Insights</title>
+    <meta name="description" content="Discovering Japan's unique approach to wellness through a childhood story of traditional Japanese bodywork and natural healing methods.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="A Childhood Story | Wellnethy Insights">
+    <meta property="og:description" content="Discovering Japan's unique approach to wellness through a childhood story of traditional Japanese bodywork and natural healing methods.">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Wellnethy">
+    <meta property="og:url" content="https://jpn-travel.com/insights/childhood-story">
+    <meta property="og:image" content="/images/japanese-wellness.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Traditional Japanese wellness and bodywork therapy">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A Childhood Story | Wellnethy Insights">
+    <meta name="twitter:description" content="Discovering Japan's unique approach to wellness through a childhood story of traditional Japanese bodywork and natural healing methods.">
+    <meta name="twitter:image" content="/images/japanese-wellness.jpg">
+    <meta name="twitter:image:alt" content="Traditional Japanese wellness and bodywork therapy">
+    <meta name="twitter:site" content="@wellnethy">
+    <meta name="twitter:creator" content="@wellnethy">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Japan wellness, traditional Japanese bodywork, mibyo, natural healing, Japanese health, wellness travel, Japan travel, traditional medicine">
+    <meta name="author" content="Wellnethy Editorial Team">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://jpn-travel.com/insights/childhood-story">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "A Childhood Story: Discovering Japan's Unique Approach to Wellness",
+        "datePublished": "2025-09-04",
+        "author": {
+            "@type": "Organization",
+            "name": "Wellnethy Editorial"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wellnethy Co., Ltd."
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://jpn-travel.com/insights/childhood-story"
+        },
+        "description": "Discovering Japan's unique approach to wellness through a childhood story of traditional Japanese bodywork and natural healing methods.",
+        "keywords": "Japan wellness, traditional Japanese bodywork, mibyo, natural healing, Japanese health, wellness travel",
+        "about": [
+            {
+                "@type": "Thing",
+                "name": "Japanese wellness"
+            },
+            {
+                "@type": "Thing", 
+                "name": "Traditional bodywork"
+            },
+            {
+                "@type": "Thing",
+                "name": "Mibyo"
+            }
+        ],
+        "articleSection": "Wellness Travel",
+        "wordCount": "200"
+    }
+    </script>
+
+    <style>
+        :root {
+            --ink: #111111;
+            --muted: #6B7280;
+            --paper: #FFFFFF;
+            --accent: #C2A060;
+            --sage: #E9EEE9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--ink);
+            background: var(--paper);
+            font-size: clamp(18px, 2.5vw, 20px);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--accent);
+            color: var(--paper);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        header {
+            padding: clamp(20px, 4vw, 32px) 0;
+            border-bottom: 1px solid var(--sage);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 clamp(20px, 5vw, 40px);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(24px, 3vw, 32px);
+            font-weight: 400;
+            color: var(--accent);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--ink);
+            transition: all 0.2s ease;
+        }
+
+        .nav-toggle.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .nav-toggle.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        nav {
+            display: flex;
+            gap: clamp(24px, 4vw, 40px);
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--ink);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: var(--accent);
+            outline: none;
+        }
+
+        nav a:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(233, 238, 233, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('hero.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: clamp(60px, 10vw, 120px) 0;
+            text-align: center;
+        }
+
+        .eyebrow {
+            font-size: 14px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(40px, 6vw, 48px);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-intro {
+            font-size: clamp(18px, 2.5vw, 22px);
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        main {
+            padding: clamp(60px, 8vw, 100px) 0;
+        }
+
+        article {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .article-header {
+            margin-bottom: clamp(40px, 6vw, 60px);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .article-title {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(32px, 5vw, 44px);
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .lede {
+            font-size: clamp(20px, 3vw, 24px);
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        .article-content h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(24px, 3.5vw, 28px);
+            font-weight: 500;
+            margin: clamp(48px, 6vw, 64px) 0 clamp(24px, 3vw, 32px) 0;
+            letter-spacing: -0.01em;
+        }
+
+        .article-content p {
+            margin-bottom: clamp(24px, 3vw, 32px);
+            max-width: 75ch;
+        }
+
+        .pull-quote {
+            background: var(--sage);
+            border-left: 4px solid var(--accent);
+            padding: clamp(24px, 4vw, 32px);
+            margin: clamp(40px, 6vw, 56px) 0;
+            font-size: clamp(20px, 3vw, 24px);
+            font-style: italic;
+            color: var(--ink);
+        }
+
+        .cta-section {
+            background: var(--sage);
+            padding: clamp(40px, 6vw, 60px);
+            border-radius: 16px;
+            text-align: center;
+            margin: clamp(60px, 8vw, 80px) 0;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 24px;
+        }
+
+        .cta-section p {
+            margin-bottom: 32px;
+            color: var(--muted);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--paper);
+            padding: 16px 32px;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 2px solid var(--accent);
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: var(--paper);
+            color: var(--accent);
+            outline: none;
+            transform: translateY(-1px);
+        }
+
+        .btn:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        footer {
+            border-top: 1px solid var(--sage);
+            padding: clamp(40px, 6vw, 60px) 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--paper);
+                flex-direction: column;
+                padding: 20px;
+                border-top: 1px solid var(--sage);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.2s ease;
+                gap: 16px;
+                align-items: stretch;
+            }
+
+            nav.open {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            nav a {
+                padding: 12px 0;
+                text-align: center;
+                border-bottom: 1px solid var(--sage);
+            }
+
+            nav a:last-child {
+                border-bottom: none;
+            }
+
+            header {
+                padding: 16px 0;
+            }
+
+            .header-content {
+                position: relative;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @media print {
+            body {
+                font-size: 12pt;
+                line-height: 1.5;
+            }
+
+            .nav-toggle,
+            .btn,
+            .cta-section {
+                display: none;
+            }
+
+            a::after {
+                content: " (" attr(href) ")";
+                font-size: 10pt;
+                color: var(--muted);
+            }
+
+            h1, h2 {
+                page-break-after: avoid;
+            }
+
+            p {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    <a href="#main" class="skip-link">Skip to content</a>
+    
+    <header role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="#top" class="logo" aria-label="Wellnethy Home">
+                    <img src="rogo.webp" alt="Wellnethy" style="height: clamp(36px, 4.5vw, 48px);">
+                </a>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav id="main-nav" role="navigation" aria-label="Main navigation">
+                    <a href="/">TOP</a>
+                    <a href="/aboutus/">About WELLNETHY</a>
+                    <a href="/travel-stories/">Travel Stories</a>
+                    <a href="/wellnethy/">会社概要</a>
+                    <a href="/contact/">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="insights">
+        <div class="container">
+            <p class="eyebrow">Insights</p>
+            <h1>Stories That Bridge Cultures</h1>
+            <p class="hero-intro">We share stories and insights that connect cultures and inspire mindful travel.</p>
+        </div>
+    </section>
+
+    <main id="main" role="main">
+        <div class="container">
+            <article>
+                <header class="article-header">
+                    <h1 class="article-title">A Childhood Story</h1>
+                    <p class="lede">Discovering Japan's Unique Approach to Wellness</p>
+                </header>
+
+                <div class="article-content">
+                    <h2>The Philosophy of Japanese Wellness</h2>
+                    <p>In Japan, there's a unique way of looking at wellness that goes beyond just treating symptoms. Growing up with a father who practiced traditional Japanese bodywork, I learned early on that health is about enhancing the body's natural healing abilities. Let me share a story of one of the patients my father helped, which beautifully illustrates this approach.</p>
+
+                    <h2>Understanding Mibyo: The Pre-Illness State</h2>
+                    <p>One day, a patient came in who wasn't exactly ill by Western standards but felt constantly fatigued and out of balance—a state we might call <strong>"mibyo,"</strong> or a pre-illness condition. Rather than prescribing medication, my father used gentle alignment techniques and encouraged simple lifestyle changes to boost the patient's own resilience. Over time, the patient not only felt better but gained a new appreciation for how the body can heal itself when given the right support.</p>
+
+                    <h2>Experience Traditional Wellness in Japan</h2>
+                    <p>This is just one example of how <em>traditional Japanese wellness practices</em> can offer a refreshing perspective. In the next posts, we'll dive into more ways you can experience this during your visit to Japan. Stay tuned and let's continue exploring this journey together!</p>
+                </div>
+
+                <div class="cta-section">
+                    <h2>Curious to experience these wellness traditions in Japan yourself?</h2>
+                    <p>My travel agency specializes in wellness-focused tours — feel free to get in touch or explore more on our website</p>
+                    <a href="https://bes.jpn-travel.com/" class="btn" role="button">Get the Professional Japan Travel Support</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 Wellnethy Co., Ltd.</p>
+            <p>Information on this website is subject to change without notice.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('#main-nav');
+
+        if (navToggle && nav) {
+            navToggle.addEventListener('click', function() {
+                const isOpen = nav.classList.contains('open');
+                
+                nav.classList.toggle('open');
+                navToggle.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', !isOpen);
+                navToggle.setAttribute('aria-label', isOpen ? 'Toggle navigation' : 'Close navigation');
+            });
+
+            // Close nav when clicking nav links
+            nav.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    nav.classList.remove('open');
+                    navToggle.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.setAttribute('aria-label', 'Toggle navigation');
+                }
+            });
+
+            // Close nav on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && nav.classList.contains('open')) {
+                    nav.classList.remove('open');
+                    navToggle.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.setAttribute('aria-label', 'Toggle navigation');
+                }
+            });
+        }
+
+        // Focus management for accessibility
+        document.addEventListener('DOMContentLoaded', function() {
+            const focusableElements = document.querySelectorAll('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])');
+            
+            focusableElements.forEach(el => {
+                el.addEventListener('focus', function() {
+                    this.style.outline = '2px solid var(--accent)';
+                    this.style.outlineOffset = '2px';
+                });
+                
+                el.addEventListener('blur', function() {
+                    this.style.outline = '';
+                    this.style.outlineOffset = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
