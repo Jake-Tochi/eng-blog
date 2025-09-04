@@ -1,1 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#")
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding "Mibyo" | Wellnethy Insights</title>
+    <meta name="description" content="The importance of early wellness care in Japan through the concept of 'mibyo' - understanding pre-illness states for better health maintenance.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Understanding 'Mibyo' | Wellnethy Insights">
+    <meta property="og:description" content="The importance of early wellness care in Japan through the concept of 'mibyo' - understanding pre-illness states for better health maintenance.">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Wellnethy">
+    <meta property="og:url" content="https://jpn-travel.com/insights/understanding-mibyo">
+    <meta property="og:image" content="/images/japanese-wellness.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Traditional Japanese wellness and bodywork therapy">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Understanding 'Mibyo' | Wellnethy Insights">
+    <meta name="twitter:description" content="The importance of early wellness care in Japan through the concept of 'mibyo' - understanding pre-illness states for better health maintenance.">
+    <meta name="twitter:image" content="/images/japanese-wellness.jpg">
+    <meta name="twitter:image:alt" content="Traditional Japanese wellness and bodywork therapy">
+    <meta name="twitter:site" content="@wellnethy">
+    <meta name="twitter:creator" content="@wellnethy">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Japan wellness, traditional Japanese bodywork, mibyo, natural healing, Japanese health, wellness travel, Japan travel, traditional medicine">
+    <meta name="author" content="Wellnethy Editorial Team">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://jpn-travel.com/insights/understanding-mibyo">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Understanding 'Mibyo': The Importance of Early Wellness Care in Japan",
+        "datePublished": "2025-09-04",
+        "author": {
+            "@type": "Organization",
+            "name": "Wellnethy Editorial"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wellnethy Co., Ltd."
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://jpn-travel.com/insights/understanding-mibyo"
+        },
+        "description": "The importance of early wellness care in Japan through the concept of 'mibyo' - understanding pre-illness states for better health maintenance.",
+        "keywords": "Japan wellness, traditional Japanese bodywork, mibyo, natural healing, Japanese health, wellness travel",
+        "about": [
+            {
+                "@type": "Thing",
+                "name": "Japanese wellness"
+            },
+            {
+                "@type": "Thing", 
+                "name": "Traditional bodywork"
+            },
+            {
+                "@type": "Thing",
+                "name": "Mibyo"
+            }
+        ],
+        "articleSection": "Wellness Travel",
+        "wordCount": "200"
+    }
+    </script>
 
+    <style>
+        :root {
+            --ink: #111111;
+            --muted: #6B7280;
+            --paper: #FFFFFF;
+            --accent: #C2A060;
+            --sage: #E9EEE9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--ink);
+            background: var(--paper);
+            font-size: clamp(18px, 2.5vw, 20px);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--accent);
+            color: var(--paper);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        header {
+            padding: clamp(20px, 4vw, 32px) 0;
+            border-bottom: 1px solid var(--sage);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 clamp(20px, 5vw, 40px);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(24px, 3vw, 32px);
+            font-weight: 400;
+            color: var(--accent);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--ink);
+            transition: all 0.2s ease;
+        }
+
+        .nav-toggle.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .nav-toggle.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        nav {
+            display: flex;
+            gap: clamp(24px, 4vw, 40px);
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--ink);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: var(--accent);
+            outline: none;
+        }
+
+        nav a:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(233, 238, 233, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('hero.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: clamp(60px, 10vw, 120px) 0;
+            text-align: center;
+        }
+
+        .eyebrow {
+            font-size: 14px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(40px, 6vw, 48px);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-intro {
+            font-size: clamp(18px, 2.5vw, 22px);
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        main {
+            padding: clamp(60px, 8vw, 100px) 0;
+        }
+
+        article {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .article-header {
+            margin-bottom: clamp(40px, 6vw, 60px);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .article-title {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(32px, 5vw, 44px);
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .lede {
+            font-size: clamp(20px, 3vw, 24px);
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        .article-content h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(24px, 3.5vw, 28px);
+            font-weight: 500;
+            margin: clamp(48px, 6vw, 64px) 0 clamp(24px, 3vw, 32px) 0;
+            letter-spacing: -0.01em;
+        }
+
+        .article-content p {
+            margin-bottom: clamp(24px, 3vw, 32px);
+            max-width: 75ch;
+        }
+
+        /* Article Image */
+        .article-image {
+            float: right;
+            margin: 0 0 clamp(24px, 3vw, 32px) clamp(24px, 3vw, 40px);
+            max-width: clamp(280px, 40vw, 350px);
+            background: var(--paper);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .article-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .article-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .article-image figcaption {
+            padding: 16px 20px;
+            font-size: 14px;
+            color: var(--muted);
+            font-style: italic;
+            text-align: center;
+            background: var(--sage);
+            line-height: 1.4;
+        }
+
+        .pull-quote {
+            background: var(--sage);
+            border-left: 4px solid var(--accent);
+            padding: clamp(24px, 4vw, 32px);
+            margin: clamp(40px, 6vw, 56px) 0;
+            font-size: clamp(20px, 3vw, 24px);
+            font-style: italic;
+            color: var(--ink);
+        }
+
+        .cta-section {
+            background: var(--sage);
+            padding: clamp(40px, 6vw, 60px);
+            border-radius: 16px;
+            text-align: center;
+            margin: clamp(60px, 8vw, 80px) 0;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 24px;
+        }
+
+        .cta-section p {
+            margin-bottom: 32px;
+            color: var(--muted);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--paper);
+            padding: 16px 32px;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 2px solid var(--accent);
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: var(--paper);
+            color: var(--accent);
+            outline: none;
+            transform: translateY(-1px);
+        }
+
+        .btn:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        /* Article Navigation */
+        .article-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: clamp(60px, 8vw, 80px) 0;
+            border-top: 1px solid var(--sage);
+            padding-top: clamp(40px, 6vw, 60px);
+        }
+
+        .article-nav-btn {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 24px;
+            background: var(--paper);
+            border: 1px solid var(--sage);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--ink);
+            transition: all 0.3s ease;
+            flex: 1;
+            max-width: 300px;
+            min-height: 100px;
+        }
+
+        .article-nav-btn:hover,
+        .article-nav-btn:focus {
+            background: var(--sage);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+        .article-nav-btn:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .article-nav-prev {
+            justify-content: flex-start;
+        }
+
+        .article-nav-next {
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+        .article-nav-icon {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent);
+            transition: transform 0.2s ease;
+        }
+
+        .article-nav-btn:hover .article-nav-icon {
+            transform: translateX(var(--arrow-move, 0));
+        }
+
+        .article-nav-prev:hover .article-nav-icon {
+            --arrow-move: -4px;
+        }
+
+        .article-nav-next:hover .article-nav-icon {
+            --arrow-move: 4px;
+        }
+
+        .article-nav-content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .article-nav-label {
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+
+        .article-nav-title {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        footer {
+            border-top: 1px solid var(--sage);
+            padding: clamp(40px, 6vw, 60px) 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--paper);
+                flex-direction: column;
+                padding: 20px;
+                border-top: 1px solid var(--sage);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.2s ease;
+                gap: 16px;
+                align-items: stretch;
+            }
+
+            nav.open {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            nav a {
+                padding: 12px 0;
+                text-align: center;
+                border-bottom: 1px solid var(--sage);
+            }
+
+            nav a:last-child {
+                border-bottom: none;
+            }
+
+            header {
+                padding: 16px 0;
+            }
+
+            .header-content {
+                position: relative;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @media print {
+            body {
+                font-size: 12pt;
+                line-height: 1.5;
+            }
+
+            .nav-toggle,
+            .btn,
+            .cta-section {
+                display: none;
+            }
+
+            a::after {
+                content: " (" attr(href) ")";
+                font-size: 10pt;
+                color: var(--muted);
+            }
+
+            h1, h2 {
+                page-break-after: avoid;
+            }
+
+            p {
+                page-break-inside: avoid;
+            }
+
+            .article-nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .article-image {
+                float: none;
+                margin: clamp(32px, 6vw, 48px) auto;
+                max-width: 100%;
+                display: block;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .article-nav {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .article-nav-btn {
+                max-width: 100%;
+            }
+
+            .article-nav-next {
+                margin-left: 0;
+                order: -1;
+            }
+
+            .article-nav-prev {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    <a href="#main" class="skip-link">Skip to content</a>
+    
+    <header role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="https://jpn-travel.com/" class="logo" aria-label="Wellnethy Home">
+                    <img src="rogo.webp" alt="Wellnethy" style="height: clamp(36px, 4.5vw, 48px);">
+                </a>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav id="main-nav" role="navigation" aria-label="Main navigation">
+                    <a href="https://jpn-travel.com/">TOP</a>
+                    <a href="https://jpn-travel.com/aboutus/">About WELLNETHY</a>
+                    <a href="https://jpn-travel.com/travel-stories/">Travel Stories</a>
+                    <a href="https://jpn-travel.com/wellnethy/">会社概要</a>
+                    <a href="https://jpn-travel.com/contact/">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="insights">
+        <div class="container">
+            <p class="eyebrow">Insights</p>
+            <h1>Stories That Bridge Cultures</h1>
+            <p class="hero-intro">We share stories and insights that connect cultures and inspire mindful travel.</p>
+        </div>
+    </section>
+
+    <main id="main" role="main">
+        <div class="container">
+            <article>
+                <header class="article-header">
+                    <h1 class="article-title">Understanding "Mibyo"</h1>
+                    <p class="lede">The Importance of Early Wellness Care in Japan</p>
+                </header>
+
+                <div class="article-content">
+                    <p>In recent years, many Western countries have started to place more emphasis on preventive health and wellness. In Japan, this idea is taken a step further through the concept of <strong>"mibyo,"</strong> which can be roughly translated as a "pre-illness" state. It's that subtle stage where you're not officially sick, but you don't feel quite right either. In this post, we'll explore why addressing "mibyo" is considered so important in Japanese culture.</p>
+
+                    <figure class="article-image">
+                        <img src="02pic.webp" alt="Traditional Japanese wellness practices and mibyo concept illustration" loading="lazy">
+                        <figcaption>Understanding the concept of "mibyo" in Japanese wellness culture</figcaption>
+                    </figure>
+
+                    <p>Why is it crucial to care for your body before you actually get sick? In Japan, the philosophy is that by taking care of these early signs—these "mibyo" moments—you can prevent more serious illnesses from developing and maintain a higher quality of daily life. Rather than waiting until a condition worsens, the Japanese approach emphasizes tuning into your body's early signals and addressing them gently.</p>
+
+                    <p>For instance, if you're feeling a bit more fatigued than usual or just not quite yourself, that's often considered a "mibyo" state. By addressing it early—through gentle self-care, traditional practices, or lifestyle adjustments—you're essentially practicing a form of <em>preventive wellness</em> that aligns well with global trends in proactive health.</p>
+
+                    <p>In essence, while "mibyo" is a uniquely Japanese concept, it's very much in line with the idea of listening to your body and taking preventive steps—something that people in the West are increasingly embracing as well.</p>
+                </div>
+
+                <div class="cta-section">
+                    <h2>Curious to experience these wellness traditions in Japan yourself?</h2>
+                    <p>My travel agency specializes in wellness-focused tours — feel free to get in touch or explore more on our website</p>
+                    <a href="https://jpn-travel.com/contact/" class="btn" role="button">Get the Professional Japan Travel Support</a>
+                </div>
+
+                <!-- Article Navigation -->
+                <nav class="article-nav" aria-label="Article navigation">
+                    <a href="http://blog.jpn-travel.com/01/" class="article-nav-btn article-nav-prev" title="Previous article">
+                        <span class="article-nav-icon">←</span>
+                        <div class="article-nav-content">
+                            <span class="article-nav-label">Previous</span>
+                            <span class="article-nav-title">A Childhood Story</span>
+                        </div>
+                    </a>
+                    
+                    <a href="/insights/next-article" class="article-nav-btn article-nav-next" title="Next article">
+                        <div class="article-nav-content">
+                            <span class="article-nav-label">Next</span>
+                            <span class="article-nav-title">Coming Soon</span>
+                        </div>
+                        <span class="article-nav-icon">→</span>
+                    </a>
+                </nav>
+            </article>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 Wellnethy Co., Ltd.</p>
+            <p>Information on this website is subject to change without notice.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('#main-nav');
+
+        if (navToggle && nav) {
+            navToggle.addEventListener('click', function() {
+                const isOpen = nav.classList.contains('open');
+                
+                nav.classList.toggle('open');
+                navToggle.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', !isOpen);
+                navToggle.setAttribute('aria-label', isOpen ? 'Toggle navigation' : 'Close navigation');
+            });
+
+            // Close nav when clicking nav links
+            nav.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    nav.classList.remove('open');
+                    navToggle.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.setAttribute('aria-label', 'Toggle navigation');
+                }
+            });
+
+            // Close nav on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && nav.classList.contains('open')) {
+                    nav.classList.remove('open');
+                    navToggle.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.setAttribute('aria-label', 'Toggle navigation');
+                }
+            });
+        }
+
+        // Focus management for accessibility
+        document.addEventListener('DOMContentLoaded', function() {
+            const focusableElements = document.querySelectorAll('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])');
+            
+            focusableElements.forEach(el => {
+                el.addEventListener('focus', function() {
+                    this.style.outline = '2px solid var(--accent)';
+                    this.style.outlineOffset = '2px';
+                });
+                
+                el.addEventListener('blur', function() {
+                    this.style.outline = '';
+                    this.style.outlineOffset = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
